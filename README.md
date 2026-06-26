@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 CareerPilot
+# CareerPilot
 
 ### AI-Powered Job Interview Preparation Agent with Live Dynamic UI
 
@@ -9,7 +9,7 @@
 [Live Demo](#) · [Report Bug](issues) · [Request Feature](issues)
 
 
-## 📌 The Problem
+## The Problem
 
 Over **1.5 million engineering graduates** enter India's job market every year. Most walk into their first technical interview completely unprepared — relying on scattered YouTube videos, generic question banks, and crowded WhatsApp groups.
 
@@ -23,7 +23,7 @@ Existing tools like InterviewBit and LeetCode offer static question banks but:
 
 ---
 
-## ✨ What Makes CareerPilot Different
+## What Makes CareerPilot Different
 
 | Feature                      | Generic Tools        | CareerPilot                         |
 |------------------------------|----------------------|-------------------------------------|
@@ -37,9 +37,9 @@ Existing tools like InterviewBit and LeetCode offer static question banks but:
 
 ---
 
-## 🎯 Core Features
+## Core Features
 
-### 🤖 Stateful AI Agent Pipeline
+### Stateful AI Agent Pipeline
 A full agentic execution loop — every user message passes through:
 1. **Intent Classifier** — detects what the user wants (mock interview, roadmap, resume review, etc.)
 2. **Tool Orchestrator** — selects and runs the right tools in parallel
@@ -47,14 +47,14 @@ A full agentic execution loop — every user message passes through:
 4. **JSON Renderer** — appends a structured payload that triggers live UI components
 5. **Observability Logger** — traces every step with latency, token usage, and success state
 
-### 🧠 Vector-Based Long-Term Memory
+### Vector-Based Long-Term Memory
 - Embeds every interaction using **OpenAI text-embedding-3-large** (3072 dimensions)
 - Stores memory chunks by type: `resume`, `interview`, `learning`, `career`
 - MD5-cached embeddings to prevent re-computation
 - Auto-prunes per-user memory at 500 chunks
 - **The agent remembers your mistakes from last week and adapts today's session around them**
 
-### 🖥️ Dynamic UI Rendering (Track 04 Core)
+### Dynamic UI Rendering (Track 04 Core)
 The AI response contains a hidden JSON payload alongside text. The frontend parser:
 - Strips the JSON from the display text
 - Routes it to the matching React component via a **whitelisted component registry**
@@ -63,28 +63,28 @@ The AI response contains a hidden JSON payload alongside text. The frontend pars
 
 **9 live UI components:** `dashboardCard` · `readinessScore` · `topicChecklist` · `feedbackCard` · `roadmapCard` · `skillGapCard` · `interviewQuestionCard` · `memoryInsightCard` · `sessionSummaryCard`
 
-### 📄 Resume Intelligence
+### Resume Intelligence
 - Upload PDF or DOCX resume
 - AI extracts skills, experience, and education
 - Generates a **skill gap analysis** against the target company's requirements
 - Produces a **personalised day-by-day prep roadmap**
 - All powered by your existing backend resume pipeline
 
-### 🎙️ Adaptive Mock Interviews
+### Adaptive Mock Interviews
 - Questions tailored to role + company + experience level
 - **5-dimensional evaluation:** correctness, completeness, clarity, confidence, communication
 - Difficulty auto-adjusts — low score → easier follow-up · high score → harder next question
 - Company-aware prompting: Google interviews differently from TCS
 - Each answer produces a **live FeedbackCard** with score, model answer, and concept breakdown
 
-### 📊 Live Readiness Score
+### Live Readiness Score
 - Baseline calculated from experience vs. days to interview
 - Animates upward as mock questions are answered correctly
 - **Agent-controlled** — the AI decides when and how much to increment based on answer quality
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -125,7 +125,7 @@ The AI response contains a hidden JSON payload alongside text. The frontend pars
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 | Layer | Technology |
@@ -157,7 +157,7 @@ The AI response contains a hidden JSON payload alongside text. The frontend pars
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 careerpilot/
@@ -207,7 +207,7 @@ careerpilot/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 20+
@@ -299,7 +299,7 @@ Test coverage includes: auth service, chat service, interview service, resume se
 ---
 
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Voice answer mode (Web Speech API)
 - [ ] Live confidence meter while typing
@@ -312,7 +312,7 @@ Test coverage includes: auth service, chat service, interview service, resume se
 
 ---
 
-## 👥 Team
+## Team
 
 Built for **HackIndia Spark 9 — South India Region**
 Hosted at St. Joseph's Institute of Technology, Chennai
